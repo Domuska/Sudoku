@@ -10,9 +10,11 @@ public class SudokuVerifier {
 		Return -4: means it is violating Rule #4
 		return -1 if the length is too short*/
 		
-		System.out.println(candidateSolution);
-		//System.out.println(Long.parseLong(candidateSolution));
 		
+		String row = candidateSolution.substring(0, 9);
+		System.out.println(row);
+		
+		/*
 		if(Integer.parseInt(candidateSolution) < 0){
 			
 			return -1;
@@ -20,8 +22,8 @@ public class SudokuVerifier {
 		else{
 			return 1;
 		}
-			
+			*/
 		
-		
+		return 0;
 	}
 }
