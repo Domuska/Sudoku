@@ -31,6 +31,7 @@ public class SudokuVerifier {
 			
 			
 		}*/
+		
 		try{
 			for (int i = 0; i < candidateSolution.length(); i++){
 				
@@ -40,9 +41,11 @@ public class SudokuVerifier {
 				}
 			}
 		}
+		//index inspected wasn't a number
 		catch(NumberFormatException e){
 			return -1;
 		}
+		
 			
 		return 1;
 	}
