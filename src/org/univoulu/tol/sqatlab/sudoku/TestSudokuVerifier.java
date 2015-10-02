@@ -32,7 +32,7 @@ public class TestSudokuVerifier {
 		
 		SudokuVerifier verifier = setupVerifier();
 		
-		//assertEquals(-1 verifier.verify(candidateSolution))
+		assertEquals(-1, verifier.verify(CORRECT_SUDOKU_STRING + "12312"));
 	}
 	
 	private SudokuVerifier setupVerifier(){

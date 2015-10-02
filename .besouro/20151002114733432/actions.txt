@@ -89,3 +89,6 @@ RefactoringAction 1443778143672 TestSudokuVerifier.java RENAME testVerify=>void 
 RefactoringAction 1443778252423 TestSudokuVerifier.java ADD String CORRECT_SUDOKU_STRING FIELD
 EditAction 1443778279886 TestSudokuVerifier.java 983 4 6 2
 EditAction 1443778283640 SudokuVerifier.java 1244 1 2 0
+UnitTestCaseAction 1443778291596 TestSudokuVerifier.java OK
+UnitTestSessionAction 1443778291597 TestSudokuVerifier OK
+EditAction 1443778343750 TestSudokuVerifier.java 997 4 7 3
