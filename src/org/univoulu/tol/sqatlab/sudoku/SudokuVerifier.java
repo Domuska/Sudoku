@@ -11,6 +11,6 @@ public class SudokuVerifier {
 		
 		
 		
-		return 0;
+		return 1;
 	}
 }
