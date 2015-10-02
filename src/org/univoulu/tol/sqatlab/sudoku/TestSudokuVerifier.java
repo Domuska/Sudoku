@@ -6,7 +6,8 @@ import org.junit.Test;
 
 public class TestSudokuVerifier {
 
-	private static final String CORRECT_SUDOKU_STRING = "417369825632158947958724316825437169791586432346912758289643571573291684164875293"; 
+	private static final String CORRECT_SUDOKU_STRING 
+			= "417369825632158947958724316825437169791586432346912758289643571573291684164875293"; 
 	
 	@Test
 	public void testVerifyMethodCorrectString() {
@@ -69,12 +70,20 @@ public class TestSudokuVerifier {
 		String testString = CORRECT_SUDOKU_STRING.substring(0, 18) +
 							"321333333" +
 							CORRECT_SUDOKU_STRING.substring(27, 81);
-		System.out.println(testString.length());
-		
 		
 		assertEquals(-3, verifier.verify(testString));
 	}
 	
+	@Test
+	public void testVerifyMethodIncorrectFirstColumn(){
+		
+		SudokuVerifier verifier = setupVerifier();
+		
+		String testString 
+		= "123456789123456789123456789123456789123456789123456789123456789123456789123456789";
+							
+		assertEquals(-4, verifier.verify(testString));
+	}
 	
 	private SudokuVerifier setupVerifier(){
 		
