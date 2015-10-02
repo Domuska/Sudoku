@@ -71,6 +71,7 @@ public class TestSudokuVerifier {
 							CORRECT_SUDOKU_STRING.substring(27, 82);
 		System.out.println(testString.length());
 		
+		fail();
 		//assertEquals(-3, )
 	}
 	
