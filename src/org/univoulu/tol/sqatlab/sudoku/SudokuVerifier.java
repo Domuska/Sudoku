@@ -50,13 +50,22 @@ public class SudokuVerifier {
 			
 			String inspectable = "" + subString.charAt(i);
 			
+			StringBuilder builder = new StringBuilder(subString);
+			subString = builder.deleteCharAt(i).toString();
+			
+			
+			if(subString.contains(inspectable)){
+				return -3;
+			}
+			
+			/*
 			for(int j = 1; j < subString.length(); j++){
 				
 				if(inspectable.equals("" + subString.charAt(j))){
 					
 					return -3;
 				}
-			}
+			}*/
 		}
 			
 			
