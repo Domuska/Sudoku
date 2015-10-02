@@ -50,7 +50,7 @@ public class SudokuVerifier {
 			
 			String inspectable = "" + subString.charAt(i);
 			
-			for(int j = 0; j < subString.length()-1; j++){
+			for(int j = 1; j < subString.length(); j++){
 				
 				if(inspectable.equals("" + subString.charAt(j))){
 					
