@@ -110,6 +110,6 @@ public class SudokuVerifier {
 		}
 		
 		//METHOD INCOMPLETE
-		return false;
+		return true;
 	}
 }
