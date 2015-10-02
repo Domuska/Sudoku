@@ -41,27 +41,28 @@ public class SudokuVerifier {
 			return -1;
 		}
 		
-		//for(int i = 0; i < candidateSolution.length(); i+=9){
+		//see if rows contain same numbers
+		for(int j = 0; j < candidateSolution.length(); j+=9){
 			
 		
-		String subString = candidateSolution.substring(0, 9);
-		
-		for (int i = 0; i < subString.length(); i++){
+			String subString = candidateSolution.substring(j, j+9);
 			
-			String inspectable = "" + subString.charAt(i);
-			
-			StringBuilder builder = new StringBuilder(subString);
-			subString = builder.deleteCharAt(i).toString();
-			
-			
-			if(subString.contains(inspectable)){
-				return -3;
-			}
-			
-			
-		}
+			for (int i = 0; i < subString.length(); i++){
 				
-		//}
+				String inspectable = "" + subString.charAt(i);
+				
+				StringBuilder builder = new StringBuilder(subString);
+				subString = builder.deleteCharAt(i).toString();
+				
+				
+				if(subString.contains(inspectable)){
+					return -3;
+				}
+				
+				
+			}
+				
+		}
 		
 		
 			
