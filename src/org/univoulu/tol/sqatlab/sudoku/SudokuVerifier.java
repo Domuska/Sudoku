@@ -7,7 +7,8 @@ public class SudokuVerifier {
 		/*Return -1: means it is violating Rule #1
 		Return -2: means it is violating Rule #2
 		Return -3: means it is violating Rule #3
-		Return -4: means it is violating Rule #4*/
+		Return -4: means it is violating Rule #4
+		return -1 if the length is too short*/
 		
 		if(Integer.parseInt(candidateSolution) < 0){
 			
