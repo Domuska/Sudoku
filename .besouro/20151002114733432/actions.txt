@@ -65,3 +65,9 @@ EditAction 1443777414814 SudokuVerifier.java 939 1 2 0
 UnitTestCaseAction 1443777423507 TestSudokuVerifier.java OK
 UnitTestSessionAction 1443777423507 TestSudokuVerifier OK
 EditAction 1443777451882 TestSudokuVerifier.java 735 3 5 2
+RefactoringAction 1443777503199 SudokuVerifier.java ADD String getSubString() METHOD
+RefactoringAction 1443777507213 SudokuVerifier.java RENAME getSubString()=>String getSubString(String) METHOD
+RefactoringAction 1443777530309 SudokuVerifier.java RENAME getSubString(String)=>String getSubString(String, int) METHOD
+RefactoringAction 1443777533827 SudokuVerifier.java RENAME getSubString(String, int)=>String getSubString(String, int, int) METHOD
+RefactoringAction 1443777549343 SudokuVerifier.java REMOVE getSubString(String, int, int) METHOD
+EditAction 1443777551763 SudokuVerifier.java 949 1 2 0
