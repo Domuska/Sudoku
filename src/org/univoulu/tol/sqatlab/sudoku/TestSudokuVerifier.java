@@ -66,7 +66,7 @@ public class TestSudokuVerifier {
 		
 		SudokuVerifier verifier = setupVerifier();
 		
-		String testString = CORRECT_SUDOKU_STRING.substring(17) +
+		String testString = CORRECT_SUDOKU_STRING.substring(0, 17) +
 							"333333333" +
 							CORRECT_SUDOKU_STRING.substring(27, 81);
 		System.out.println(testString.length());
