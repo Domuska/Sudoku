@@ -51,7 +51,16 @@ public class TestSudokuVerifier {
 		assertEquals(-1, verifier.verify(CORRECT_SUDOKU_STRING + "12312"));
 	}
 	
-	
+	@Test
+	public void testVerifyMethodIncorrectFirstRow(){
+		
+		SudokuVerifier verifier = setupVerifier();
+		
+		String testString = "111111111" + CORRECT_SUDOKU_STRING.substring(10);
+		System.out.println (testString.length());
+		
+		assertEquals(-3, verifier.verify(testString));
+	}
 	
 	
 	private SudokuVerifier setupVerifier(){

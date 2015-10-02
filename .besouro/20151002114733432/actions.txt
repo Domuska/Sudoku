@@ -120,3 +120,9 @@ UnitTestCaseAction 1443779165613 TestSudokuVerifier.java OK
 UnitTestSessionAction 1443779165614 TestSudokuVerifier OK
 EditAction 1443779333469 TestSudokuVerifier.java 1414 6 11 5
 EditAction 1443779337040 SudokuVerifier.java 1628 1 3 0
+UnitTestCaseAction 1443779341740 TestSudokuVerifier.java OK
+UnitTestSessionAction 1443779341740 TestSudokuVerifier OK
+RefactoringAction 1443779381497 TestSudokuVerifier.java ADD void testVerifyMethod FIELD
+RefactoringAction 1443779386015 TestSudokuVerifier.java RENAME testVerifyMethod=>void testVerifyMethodIncorrect FIELD
+RefactoringAction 1443779402250 TestSudokuVerifier.java RENAME testVerifyMethodIncorrect=>void testVerifyMethodIncorrectFirstRow() METHOD
+EditAction 1443779669724 TestSudokuVerifier.java 1701 7 15 6
