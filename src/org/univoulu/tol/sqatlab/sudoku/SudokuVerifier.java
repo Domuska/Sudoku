@@ -9,6 +9,10 @@ public class SudokuVerifier {
 		Return -3: means it is violating Rule #3
 		Return -4: means it is violating Rule #4*/
 		
+		if(Integer.parseInt(candidateSolution) < 0){
+			
+			return -1;
+		}
 		
 		
 		return 1;
