@@ -18,7 +18,7 @@ public class SudokuVerifier {
 		Return -2: means it is violating Rule #2
 		Return -3: means it is violating Rule #3
 		Return -4: means it is violating Rule #4
-		return -1 if the length is too short*/
+		return -1 if the length is too short or long*/
 		
 		
 		/*for(int i = 0; i <= 9; i++){
