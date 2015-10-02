@@ -84,3 +84,7 @@ EditAction 1443778058043 SudokuVerifier.java 1191 1 2 0
 UnitTestCaseAction 1443778063051 TestSudokuVerifier.java OK
 UnitTestSessionAction 1443778063052 TestSudokuVerifier OK
 EditAction 1443778097610 SudokuVerifier.java 1236 1 2 0
+RefactoringAction 1443778137658 TestSudokuVerifier.java ADD void testVerify FIELD
+RefactoringAction 1443778143672 TestSudokuVerifier.java RENAME testVerify=>void testVerifyMethodTooLongString() METHOD
+RefactoringAction 1443778252423 TestSudokuVerifier.java ADD String CORRECT_SUDOKU_STRING FIELD
+EditAction 1443778279886 TestSudokuVerifier.java 983 4 6 2

@@ -6,13 +6,15 @@ import org.junit.Test;
 
 public class TestSudokuVerifier {
 
+	private static final String CORRECT_SUDOKU_STRING = "417369825632158947958724316825437169791586432346912758289643571573291684164875293"; 
+	
 	@Test
 	public void testVerifyMethodCorrectString() {
 		
 		SudokuVerifier verifier = setupVerifier();
 		
 		assertEquals(1, verifier.
-				verify("417369825632158947958724316825437169791586432346912758289643571573291684164875293"));
+				verify(CORRECT_SUDOKU_STRING));
 		
 	}
 	
@@ -25,7 +27,13 @@ public class TestSudokuVerifier {
 				verifier.verify("-417369825632158947958724316825437169791586432346912758289643571573291684164875293"));
 	}
 	
-	
+	@Test
+	public void testVerifyMethodTooLongString(){
+		
+		SudokuVerifier verifier = setupVerifier();
+		
+		//assertEquals(-1 verifier.verify(candidateSolution))
+	}
 	
 	private SudokuVerifier setupVerifier(){
 		
