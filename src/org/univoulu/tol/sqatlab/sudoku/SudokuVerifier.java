@@ -25,7 +25,7 @@ public class SudokuVerifier {
 			return -1;
 		
 		
-		//check for a negative input string
+		//check that the string includes only numbers
 		
 		try{
 			for (int i = 0; i < candidateSolution.length(); i++){
