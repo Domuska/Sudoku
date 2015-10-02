@@ -27,7 +27,7 @@ public class SudokuVerifier {
 		
 		//check for a negative input string
 		
-		if(Integer.parseInt(candidateSolution) < 0){
+		if(Long.parseLong(candidateSolution) < 0){
 			return -1;
 		}
 		
