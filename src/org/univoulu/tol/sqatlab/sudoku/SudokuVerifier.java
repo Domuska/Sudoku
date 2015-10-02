@@ -30,7 +30,7 @@ public class SudokuVerifier {
 		try{
 			for (int i = 0; i < candidateSolution.length(); i++){
 				
-				if(Integer.parseInt("" + candidateSolution.charAt(i) + "") < 0){
+				if(Integer.parseInt("" + candidateSolution.charAt(i)) < 0){
 					
 					return -1;
 				}
@@ -44,15 +44,15 @@ public class SudokuVerifier {
 		//for(int i = 0; i < candidateSolution.length(); i+=9){
 			
 		
-		String subString = candidateSolution.substring(0, 8);
+		String subString = candidateSolution.substring(0, 9);
 		
 		for (int i = 0; i < subString.length(); i++){
 			
-			String inspectable = "" + subString.charAt(i) + "";
+			String inspectable = "" + subString.charAt(i);
 			
 			for(int j = 0; j < subString.length()-1; j++){
 				
-				if(inspectable.equals("" + subString.charAt(j) + "")){
+				if(inspectable.equals("" + subString.charAt(j))){
 					
 					return -3;
 				}
