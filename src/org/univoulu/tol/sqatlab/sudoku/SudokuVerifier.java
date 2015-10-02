@@ -58,17 +58,9 @@ public class SudokuVerifier {
 				return -3;
 			}
 			
-			/*
-			for(int j = 1; j < subString.length(); j++){
-				
-				if(inspectable.equals("" + subString.charAt(j))){
-					
-					return -3;
-				}
-			}*/
+			
 		}
-			
-			
+				
 		//}
 		
 		

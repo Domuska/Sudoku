@@ -149,3 +149,4 @@ UnitTestSessionAction 1443780852070 TestSudokuVerifier OK
 RefactoringAction 1443780904368 TestSudokuVerifier.java ADD void testVerifyMethod FIELD
 RefactoringAction 1443780909386 TestSudokuVerifier.java RENAME testVerifyMethod=>void testVerifyMethodIncorrectThirdRow() METHOD
 EditAction 1443781030868 TestSudokuVerifier.java 1933 8 14 6
+EditAction 1443781034457 SudokuVerifier.java 2073 1 5 0
