@@ -45,8 +45,9 @@ public class SudokuVerifier {
 		}
 		
 		//see if rows contain same numbers
-		if(!testRow())
+		if(!testRow()){
 			return -3;
+		}
 		
 		
 			
