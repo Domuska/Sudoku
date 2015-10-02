@@ -2,8 +2,11 @@ package org.univoulu.tol.sqatlab.sudoku;
 
 public class SudokuVerifier {
 
+	private String candidateString;
+	
 	public int verify(String candidateSolution) {
 		
+		candidateString = candidateSolution;
 		
 		// returns 1 if the candidate solution is correct
 		/*
@@ -21,16 +24,16 @@ public class SudokuVerifier {
 		return -1 if the length is too short or long*/
 		
 		
-		if(candidateSolution.length() != 81)
+		if(candidateString.length() != 81)
 			return -1;
 		
 		
 		//check that the string includes only numbers
 		
 		try{
-			for (int i = 0; i < candidateSolution.length(); i++){
+			for (int i = 0; i < candidateString.length(); i++){
 				
-				if(Integer.parseInt("" + candidateSolution.charAt(i)) < 0){
+				if(Integer.parseInt("" + candidateString.charAt(i)) < 0){
 					
 					return -1;
 				}
@@ -42,10 +45,20 @@ public class SudokuVerifier {
 		}
 		
 		//see if rows contain same numbers
-		for(int j = 0; j < candidateSolution.length(); j+=9){
-			
+		if(!testRow())
+			return -3;
 		
-			String subString = candidateSolution.substring(j, j+9);
+		
+			
+		return 0;
+	}
+	
+	private boolean testRow(){
+		
+		for(int j = 0; j < candidateString.length(); j+=9){
+			
+			
+			String subString = candidateString.substring(j, j+9);
 			
 			for (int i = 0; i < subString.length(); i++){
 				
@@ -56,7 +69,7 @@ public class SudokuVerifier {
 				
 				
 				if(subString.contains(inspectable)){
-					return -3;
+					return false;
 				}
 				
 				
@@ -64,12 +77,8 @@ public class SudokuVerifier {
 				
 		}
 		
-		
-			
-		return 0;
+		return true;
 	}
-	
-	
 }
 
 /*for(int i = 0; i <= 9; i++){

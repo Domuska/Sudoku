@@ -180,3 +180,9 @@ EditAction 1443781450262 TestSudokuVerifier.java 2012 8 18 7
 UnitTestCaseAction 1443781459191 TestSudokuVerifier.java FAIL
 UnitTestSessionAction 1443781459192 TestSudokuVerifier FAIL
 EditAction 1443781571233 SudokuVerifier.java 2125 1 4 0
+UnitTestCaseAction 1443781575999 TestSudokuVerifier.java OK
+UnitTestSessionAction 1443781576000 TestSudokuVerifier OK
+RefactoringAction 1443781612907 SudokuVerifier.java ADD boolean testRow() METHOD
+RefactoringAction 1443781649528 SudokuVerifier.java ADD String ca FIELD
+RefactoringAction 1443781652045 SudokuVerifier.java RENAME ca=>String candidateString FIELD
+EditAction 1443781760568 SudokuVerifier.java 2283 2 7 0
