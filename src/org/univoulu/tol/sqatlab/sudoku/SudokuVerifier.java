@@ -78,7 +78,6 @@ public class SudokuVerifier {
 					return false;
 				}
 				
-				
 			}
 				
 		}
@@ -90,7 +89,7 @@ public class SudokuVerifier {
 		
 		String subString = "";
 		
-		
+		//THIS METHOD IS STILL INCOMPLETE, IT DOES NOT GO THROUGH THE WHOLE INPUT STRING
 		
 		for(int i = 0; i < candidateString.length(); i +=9){
 			subString = subString + candidateString.charAt(i);
@@ -113,32 +112,3 @@ public class SudokuVerifier {
 		return true;
 	}
 }
-
-/*for(int i = 0; i <= 9; i++){
-String row = candidateSolution.substring(i, i+9);
-System.out.println(row);
-
-if(Integer.parseInt(row) < 0){
-	return -1;
-}
-
-
-}*/
-
-
-/*
- try{
-			for (int i = 0; i < candidateSolution.length(); i++){
-				
-				if(Integer.parseInt("" + candidateSolution.charAt(i) + "") < 0){
-					
-					return -1;
-				}
-			}
-		}
-		//index inspected wasn't a number
-		catch(NumberFormatException e){
-			return -1;
-		}
- */
-

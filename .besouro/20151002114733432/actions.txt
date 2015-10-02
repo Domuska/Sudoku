@@ -202,3 +202,10 @@ UnitTestCaseAction 1443782397367 TestSudokuVerifier.java FAIL
 UnitTestSessionAction 1443782397368 TestSudokuVerifier FAIL
 RefactoringAction 1443782428516 SudokuVerifier.java ADD boolean testColumn() METHOD
 EditAction 1443782964099 SudokuVerifier.java 2901 3 12 0
+UnitTestCaseAction 1443782969007 TestSudokuVerifier.java OK
+UnitTestSessionAction 1443782969008 TestSudokuVerifier OK
+RefactoringAction 1443783099242 TestSudokuVerifier.java ADD void testVerifyMethod FIELD
+RefactoringAction 1443783104261 TestSudokuVerifier.java RENAME testVerifyMethod=>void testVerifyMethodIncorrectSecondColumn FIELD
+RefactoringAction 1443783115282 TestSudokuVerifier.java RENAME testVerifyMethodIncorrectSecondColumn=>void testVerifyMethodIncorrectSecondColumn() METHOD
+RefactoringAction 1443783312982 TestSudokuVerifier.java REMOVE testVerifyMethodIncorrectSecondColumn() METHOD
+EditAction 1443783428154 SudokuVerifier.java 2515 3 12 0
