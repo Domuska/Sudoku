@@ -13,7 +13,7 @@ public class TestSudokuVerifier {
 		
 		SudokuVerifier verifier = setupVerifier();
 		
-		assertEquals(1, verifier.
+		assertEquals(0, verifier.
 				verify(CORRECT_SUDOKU_STRING));
 		
 	}

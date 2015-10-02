@@ -116,3 +116,6 @@ UnitTestCaseAction 1443778923958 TestSudokuVerifier.java OK
 UnitTestSessionAction 1443778923958 TestSudokuVerifier OK
 RefactoringAction 1443779042969 TestSudokuVerifier.java ADD void testVerifyMethodIncorrectCharacterInInputString() METHOD
 EditAction 1443779160422 TestSudokuVerifier.java 1414 6 11 5
+UnitTestCaseAction 1443779165613 TestSudokuVerifier.java OK
+UnitTestSessionAction 1443779165614 TestSudokuVerifier OK
+EditAction 1443779333469 TestSudokuVerifier.java 1414 6 11 5
