@@ -89,7 +89,9 @@ public class SudokuVerifier {
 		
 		String subString = "";
 		
-		//THIS METHOD IS STILL INCOMPLETE, IT DOES NOT GO THROUGH THE WHOLE INPUT STRING
+		//THIS METHOD IS STILL INCOMPLETE, IT DOES NOT GO THROUGH
+		//ALL COLUMNS, ONLY THE FIRST COLUMN
+		
 		
 		for(int i = 0; i < candidateString.length(); i +=9){
 			subString = subString + candidateString.charAt(i);
