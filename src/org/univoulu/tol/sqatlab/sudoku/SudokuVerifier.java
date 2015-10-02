@@ -21,7 +21,7 @@ public class SudokuVerifier {
 		return -1 if the length is too short*/
 		
 		
-		for(int i = 0; i <= 9; i++){
+		/*for(int i = 0; i <= 9; i++){
 			String row = candidateSolution.substring(i, i+9);
 			System.out.println(row);
 			
@@ -30,8 +30,15 @@ public class SudokuVerifier {
 			}
 			
 			
-		}
+		}*/
+		
+		for (int i = 0; i < candidateSolution.length(); i++){
+			if(Integer.parseInt("" + candidateSolution.charAt(i) + "") < 0){
 				
+				return -1;
+			}
+		}
+			
 		return 1;
 	}
 	
