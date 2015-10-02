@@ -49,7 +49,10 @@ public class SudokuVerifier {
 			return -3;
 		}
 		
-		
+		//see if column contains same numbers
+		if(!testColumn()){
+			return -4;
+		}
 		
 		
 			
@@ -78,6 +81,33 @@ public class SudokuVerifier {
 				
 			}
 				
+		}
+		
+		return true;
+	}
+	
+	private boolean testColumn(){
+		
+		String subString = "";
+		
+		
+		
+		for(int i = 0; i < candidateString.length(); i +=9){
+			subString = subString + candidateString.charAt(i);
+		}
+		
+		
+		for(int i = 0; i < subString.length(); i++){
+			
+			String inspectable = "" + subString.charAt(i);
+			
+			StringBuilder builder = new StringBuilder(subString);
+			subString = builder.deleteCharAt(i).toString();
+			
+			
+			if(subString.contains(inspectable)){
+				return false;
+			}
 		}
 		
 		return true;
