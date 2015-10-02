@@ -31,12 +31,17 @@ public class SudokuVerifier {
 			
 			
 		}*/
-		
-		for (int i = 0; i < candidateSolution.length(); i++){
-			if(Integer.parseInt("" + candidateSolution.charAt(i) + "") < 0){
+		try{
+			for (int i = 0; i < candidateSolution.length(); i++){
 				
-				return -1;
+				if(Integer.parseInt("" + candidateSolution.charAt(i) + "") < 0){
+					
+					return -1;
+				}
 			}
+		}
+		catch(NumberFormatException e){
+			return -1;
 		}
 			
 		return 1;
