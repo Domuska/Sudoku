@@ -21,7 +21,7 @@ public class SudokuVerifier {
 		return -1 if the length is too short or long*/
 		
 		
-		if(candidateSolution.length() > 81)
+		if(candidateSolution.length() != 81)
 			return -1;
 		
 		
