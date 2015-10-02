@@ -109,6 +109,7 @@ public class SudokuVerifier {
 			}
 		}
 		
-		return true;
+		//METHOD INCOMPLETE
+		return false;
 	}
 }
