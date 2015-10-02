@@ -21,17 +21,11 @@ public class SudokuVerifier {
 		return -1 if the length is too short or long*/
 		
 		
-		/*for(int i = 0; i <= 9; i++){
-			String row = candidateSolution.substring(i, i+9);
-			System.out.println(row);
-			
-			if(Integer.parseInt(row) < 0){
-				return -1;
-			}
-			
-			
-		}*/
+		if(candidateSolution.length() > 81)
+			return -1;
 		
+		
+		//check for a negative input string
 		try{
 			for (int i = 0; i < candidateSolution.length(); i++){
 				
@@ -46,9 +40,25 @@ public class SudokuVerifier {
 			return -1;
 		}
 		
+		
+		
+		
 			
 		return 1;
 	}
 	
 	
 }
+
+/*for(int i = 0; i <= 9; i++){
+String row = candidateSolution.substring(i, i+9);
+System.out.println(row);
+
+if(Integer.parseInt(row) < 0){
+	return -1;
+}
+
+
+}*/
+
+
