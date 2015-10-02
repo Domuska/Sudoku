@@ -57,7 +57,6 @@ public class TestSudokuVerifier {
 		SudokuVerifier verifier = setupVerifier();
 		
 		String testString = "111111111" + CORRECT_SUDOKU_STRING.substring(9);
-		System.out.println (testString.length());
 		
 		assertEquals(-3, verifier.verify(testString));
 	}
