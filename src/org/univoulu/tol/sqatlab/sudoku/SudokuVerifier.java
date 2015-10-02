@@ -41,8 +41,26 @@ public class SudokuVerifier {
 			return -1;
 		}
 		
+		//for(int i = 0; i < candidateSolution.length(); i+=9){
+			
 		
+		String subString = candidateSolution.substring(0, 9);
 		
+		for (int i = 0; i < subString.length(); i++){
+			
+			String inspectable = "" + subString.charAt(i) + "";
+			
+			for(int j = 0; j < subString.length()-1; j++){
+				
+				if(inspectable.equals("" + subString.charAt(j) + "")){
+					
+					return -3;
+				}
+			}
+		}
+			
+			
+		//}
 		
 		
 			
