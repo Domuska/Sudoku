@@ -73,3 +73,4 @@ RefactoringAction 1443777549343 SudokuVerifier.java REMOVE getSubString(String, 
 EditAction 1443777551763 SudokuVerifier.java 949 1 2 0
 RefactoringAction 1443777572179 TestSudokuVerifier.java ADD void test FIELD
 EditAction 1443777910082 SudokuVerifier.java 1115 1 2 0
+EditAction 1443777915616 TestSudokuVerifier.java 759 3 5 2

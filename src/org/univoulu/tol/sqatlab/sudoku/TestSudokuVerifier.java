@@ -25,7 +25,8 @@ public class TestSudokuVerifier {
 				verifier.verify("-417369825632158947958724316825437169791586432346912758289643571573291684164875293"));
 	}
 	
-	
+	@Test
+	public void test
 	
 	private SudokuVerifier setupVerifier(){
 		
