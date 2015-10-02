@@ -7,8 +7,24 @@ import org.junit.Test;
 public class TestSudokuVerifier {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testVerifyMethodCorrectString() {
+		
+		SudokuVerifier verifier = setupVerifier();
+		
+		assertEquals(0, verifier.
+				verify("417369825632158947958724316825437169791586432346912758289643571573291684164875293"));
+		
+	}
+	
+	@Test
+	public void testVerifyMethodWrongString(){
+		
+		
+	}
+	
+	private SudokuVerifier setupVerifier(){
+		
+		return new SudokuVerifier();
 	}
 
 }

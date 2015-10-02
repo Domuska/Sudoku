@@ -1,0 +1,3 @@
+FileOpenedAction 1443775653847 TestSudokuVerifier.java 480 1 1 0
+RefactoringAction 1443775657497 TestSudokuVerifier.java RENAME test()=>void testVerifyMethodCorrectString() METHOD
+EditAction 1443775662095 TestSudokuVerifier.java 548 3 3 1
