@@ -8,3 +8,4 @@ EditAction 1443775759716 TestSudokuVerifier.java 727 3 5 2
 UnitTestCaseAction 1443775766193 TestSudokuVerifier.java FAIL
 UnitTestSessionAction 1443775766194 TestSudokuVerifier FAIL
 EditAction 1443775796949 SudokuVerifier.java 390 1 1 0
+EditAction 1443775802809 TestSudokuVerifier.java 727 3 5 2
