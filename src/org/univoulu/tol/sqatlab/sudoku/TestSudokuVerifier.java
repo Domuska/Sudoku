@@ -68,7 +68,7 @@ public class TestSudokuVerifier {
 		
 		String testString = CORRECT_SUDOKU_STRING.substring(0, 17) +
 							"333333333" +
-							CORRECT_SUDOKU_STRING.substring(27, 81);
+							CORRECT_SUDOKU_STRING.substring(27, 82);
 		System.out.println(testString.length());
 		
 		//assertEquals(-3, )
