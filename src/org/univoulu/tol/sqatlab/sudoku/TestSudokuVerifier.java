@@ -61,6 +61,18 @@ public class TestSudokuVerifier {
 		assertEquals(-3, verifier.verify(testString));
 	}
 	
+	@Test
+	public void testVerifyMethodIncorrectThirdRow(){
+		
+		SudokuVerifier verifier = setupVerifier();
+		
+		String testString = CORRECT_SUDOKU_STRING.substring(17) +
+							"333333333" +
+							CORRECT_SUDOKU_STRING.substring(27, 81);
+		
+		assertEquals(-3, )
+	}
+	
 	
 	private SudokuVerifier setupVerifier(){
 		
