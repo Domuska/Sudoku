@@ -44,7 +44,7 @@ public class SudokuVerifier {
 		//for(int i = 0; i < candidateSolution.length(); i+=9){
 			
 		
-		String subString = candidateSolution.substring(0, 9);
+		String subString = candidateSolution.substring(0, 8);
 		
 		for (int i = 0; i < subString.length(); i++){
 			
