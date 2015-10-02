@@ -13,7 +13,7 @@ public class SudokuVerifier {
 		System.out.println(candidateSolution);
 		//System.out.println(Long.parseLong(candidateSolution));
 		
-		if(Integer.parseInt(candidateSolution) < 0){
+		if(Long.parseLong(candidateSolution) < 0){
 			
 			return -1;
 		}
