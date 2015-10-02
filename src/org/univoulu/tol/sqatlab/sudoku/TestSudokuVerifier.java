@@ -72,7 +72,7 @@ public class TestSudokuVerifier {
 		System.out.println(testString.length());
 		
 		
-		fail();
+		assertEquals(-3, verifier.verify(testString));
 	}
 	
 	
