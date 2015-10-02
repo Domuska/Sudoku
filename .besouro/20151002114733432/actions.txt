@@ -197,3 +197,4 @@ UnitTestCaseAction 1443781833355 TestSudokuVerifier.java OK
 UnitTestSessionAction 1443781833356 TestSudokuVerifier OK
 RefactoringAction 1443781902192 TestSudokuVerifier.java ADD void testVerifyMethodIncorrectFirstColumn() METHOD
 EditAction 1443782382157 TestSudokuVerifier.java 2260 9 20 8
+EditAction 1443782392190 SudokuVerifier.java 2297 2 7 0
