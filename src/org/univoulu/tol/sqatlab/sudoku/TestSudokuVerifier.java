@@ -79,11 +79,13 @@ public class TestSudokuVerifier {
 		
 		SudokuVerifier verifier = setupVerifier();
 		
-		String testString 
-		= "123456789123456789123456789123456789123456789123456789123456789123456789123456789";
+		String testString =
+				"123456789123456789123456789123456789123456789123456789123456789123456789123456789";
 							
 		assertEquals(-4, verifier.verify(testString));
 	}
+	
+	
 	
 	private SudokuVerifier setupVerifier(){
 		
