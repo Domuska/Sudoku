@@ -57,3 +57,6 @@ RefactoringAction 1443777187407 TestSudokuVerifier.java REMOVE testVerifyMethodC
 RefactoringAction 1443777190921 TestSudokuVerifier.java ADD void testVerifyMethodCorrectString() METHOD
 EditAction 1443777196037 TestSudokuVerifier.java 983 3 5 2
 EditAction 1443777253279 SudokuVerifier.java 929 1 2 0
+UnitTestCaseAction 1443777265696 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1443777265697 TestSudokuVerifier FAIL
+EditAction 1443777301895 SudokuVerifier.java 951 1 1 0
