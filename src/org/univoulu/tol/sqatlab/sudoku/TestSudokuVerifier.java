@@ -28,14 +28,20 @@ public class TestSudokuVerifier {
 	}
 	
 	@Test
+	public void testVerifyMethodIncorrectCharacterInInputString(){
+		
+		SudokuVerifier verifier = setupVerifier();
+		
+		assertEquals(-1, verifier.verify(CORRECT_SUDOKU_STRING.replace('1', '-')));
+	}
+	
+	@Test
 	public void testVerifyMethodTooShortString(){
 		
 		SudokuVerifier verifier = setupVerifier();
 		
 		assertEquals(-1, verifier.verify(CORRECT_SUDOKU_STRING.substring(0, 18)));
 	}
-	
-	
 	
 	@Test
 	public void testVerifyMethodTooLongString(){
@@ -44,6 +50,9 @@ public class TestSudokuVerifier {
 		
 		assertEquals(-1, verifier.verify(CORRECT_SUDOKU_STRING + "12312"));
 	}
+	
+	
+	
 	
 	private SudokuVerifier setupVerifier(){
 		
