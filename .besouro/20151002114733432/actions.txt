@@ -126,3 +126,4 @@ RefactoringAction 1443779381497 TestSudokuVerifier.java ADD void testVerifyMetho
 RefactoringAction 1443779386015 TestSudokuVerifier.java RENAME testVerifyMethod=>void testVerifyMethodIncorrect FIELD
 RefactoringAction 1443779402250 TestSudokuVerifier.java RENAME testVerifyMethodIncorrect=>void testVerifyMethodIncorrectFirstRow() METHOD
 EditAction 1443779669724 TestSudokuVerifier.java 1701 7 15 6
+EditAction 1443779673425 SudokuVerifier.java 1636 1 3 0
