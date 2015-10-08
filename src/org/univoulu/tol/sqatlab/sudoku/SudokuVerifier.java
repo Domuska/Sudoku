@@ -46,7 +46,7 @@ public class SudokuVerifier {
 		}
 		
 		//see if rows contain same numbers
-		if(!testRow()){
+		if(!testRows()){
 			return -3;
 		}
 		
@@ -60,7 +60,7 @@ public class SudokuVerifier {
 		return 0;
 	}
 	
-	private boolean testRow(){
+	private boolean testRows(){
 		
 		for(int j = 0; j < candidateString.length(); j+=9){
 			
