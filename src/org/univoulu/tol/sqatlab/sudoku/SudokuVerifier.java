@@ -111,6 +111,7 @@ public class SudokuVerifier {
 				
 				
 				if(subString.contains(inspectable)){
+					System.out.println("Row " + j);
 					return false;
 				}
 			}
