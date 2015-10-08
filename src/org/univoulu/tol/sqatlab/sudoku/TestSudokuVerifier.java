@@ -93,6 +93,8 @@ public class TestSudokuVerifier {
 		
 		String testString = 
 				"417369825432158947458724316825437169791586432346912758289643571573291684164875293";
+		
+		assertEquals (-4, verifier.verify(testString));
 				
 	}
 	
