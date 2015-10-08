@@ -93,8 +93,8 @@ public class SudokuVerifier {
 		//THIS METHOD IS STILL INCOMPLETE, IT DOES NOT GO THROUGH
 		//ALL COLUMNS, ONLY THE FIRST COLUMN
 		
-		
-		//for(int j = 0; j < candidateString.length()/ROW_LENGTH; j++){
+		System.out.println(candidateString.length()/ROW_LENGTH);
+		for(int j = 0; j < candidateString.length()/ROW_LENGTH; j++){
 		
 			for(int i = 0; i < candidateString.length(); i +=9){
 				subString = subString + candidateString.charAt(i);
@@ -113,7 +113,7 @@ public class SudokuVerifier {
 					return false;
 				}
 			}
-		//}
+		}
 		
 		//METHOD INCOMPLETE
 		return true;
