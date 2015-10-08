@@ -41,3 +41,6 @@ RefactoringAction 1444337030674 TestSudokuVerifier.java ADD void testVerifyMetho
 RefactoringAction 1444337032217 TestSudokuVerifier.java RENAME testVerifyMethodIncorrectFirstColumn=>void testVerifyMethodIncorrectFirstColumn() METHOD
 EditAction 1444337141623 TestSudokuVerifier.java 2503 10 22 8
 EditAction 1444337159261 TestSudokuVerifier.java 2558 10 23 9
+UnitTestCaseAction 1444337161109 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1444337161109 TestSudokuVerifier FAIL
+EditAction 1444337228633 TestSudokuVerifier.java 2558 10 23 9
