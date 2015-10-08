@@ -86,7 +86,15 @@ public class TestSudokuVerifier {
 		assertEquals(-4, verifier.verify(testString));
 	}
 	
-	
+	@Test
+	public void testVerifyMethodSubGrid(){
+		
+		SudokuVerifier verifier = setupVerifier();
+		String testString =
+				"123456789234567891345678912456789123567891234678912345789123456891234567912345678";
+		
+		assertEquals(-2, verifier.verify(testString));
+	}
 	
 	private SudokuVerifier setupVerifier(){
 		
