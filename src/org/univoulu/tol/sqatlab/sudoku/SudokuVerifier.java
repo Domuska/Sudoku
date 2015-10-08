@@ -97,12 +97,13 @@ public class SudokuVerifier {
 		
 		for(int j = 0; j < candidateString.length()/ROW_LENGTH; j++){
 		
-			for(int i = 0; i < candidateString.length(); i +=9){
+			for(int i = 0; i < candidateString.length(); i +=ROW_LENGTH){
 				subString = subString + candidateString.charAt(i);
 			}
 			
 			
-			for(int i = 0; i < subString.length(); i++){
+			//for(int i = 0; i < subString.length(); i++){
+			do{
 				
 				String inspectable = "" + subString.charAt(i);
 				
@@ -114,7 +115,8 @@ public class SudokuVerifier {
 					System.out.println("Row " + j);
 					return false;
 				}
-			}
+			//}
+			}while(subString.length() > 0);
 		}
 		
 		//METHOD INCOMPLETE
