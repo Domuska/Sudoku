@@ -30,3 +30,4 @@ RefactoringAction 1444336897270 SudokuVerifier.java RENAME testColumn()=>boolean
 EditAction 1444336897272 SudokuVerifier.java 2908 3 12 0
 RefactoringAction 1444336904715 SudokuVerifier.java RENAME testRow()=>boolean testRows() METHOD
 EditAction 1444336904718 SudokuVerifier.java 2910 3 12 0
+EditAction 1444336944694 SudokuVerifier.java 2618 3 12 0

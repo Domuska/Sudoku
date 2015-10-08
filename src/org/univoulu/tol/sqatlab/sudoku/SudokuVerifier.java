@@ -90,8 +90,6 @@ public class SudokuVerifier {
 		
 		String subString = "";
 		
-		//THIS METHOD IS STILL INCOMPLETE, IT DOES NOT GO THROUGH
-		//ALL COLUMNS, ONLY THE FIRST COLUMN
 		
 		System.out.println(candidateString.length()/ROW_LENGTH);
 		
@@ -101,25 +99,20 @@ public class SudokuVerifier {
 				subString = subString + candidateString.charAt(i);
 			}
 			
-			
-			//for(int i = 0; i < subString.length(); i++){
 			do{
 				
-				//String inspectable = "" + subString.charAt(i);
 				String inspectable = "" + subString.charAt(0);
 				
 				StringBuilder builder = new StringBuilder(subString);
-				//subString = builder.deleteCharAt(i).toString();
 				subString = builder.deleteCharAt(0).toString();
 				
 				if(subString.contains(inspectable)){
 					return false;
 				}
-			//}
+			
 			}while(subString.length() > 0);
 		}
 		
-		//METHOD INCOMPLETE
 		return true;
 	}
 }
