@@ -3,6 +3,7 @@ package org.univoulu.tol.sqatlab.sudoku;
 public class SudokuVerifier {
 
 	private String candidateString;
+	private final int ROW_LENGTH = 9;
 	
 	public int verify(String candidateSolution) {
 		
@@ -93,21 +94,24 @@ public class SudokuVerifier {
 		//ALL COLUMNS, ONLY THE FIRST COLUMN
 		
 		
-		for(int i = 0; i < candidateString.length(); i +=9){
-			subString = subString + candidateString.charAt(i);
-		}
+		for(int j = 0; j < candidateString.length()/ROW_LENGTH; j++){
 		
-		
-		for(int i = 0; i < subString.length(); i++){
-			
-			String inspectable = "" + subString.charAt(i);
-			
-			StringBuilder builder = new StringBuilder(subString);
-			subString = builder.deleteCharAt(i).toString();
+			for(int i = 0; i < candidateString.length(); i +=9){
+				subString = subString + candidateString.charAt(i);
+			}
 			
 			
-			if(subString.contains(inspectable)){
-				return false;
+			for(int i = 0; i < subString.length(); i++){
+				
+				String inspectable = "" + subString.charAt(i);
+				
+				StringBuilder builder = new StringBuilder(subString);
+				subString = builder.deleteCharAt(i).toString();
+				
+				
+				if(subString.contains(inspectable)){
+					return false;
+				}
 			}
 		}
 		
