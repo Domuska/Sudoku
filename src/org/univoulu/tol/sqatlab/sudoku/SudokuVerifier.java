@@ -105,14 +105,14 @@ public class SudokuVerifier {
 			//for(int i = 0; i < subString.length(); i++){
 			do{
 				
-				String inspectable = "" + subString.charAt(i);
+				//String inspectable = "" + subString.charAt(i);
+				String inspectable = "" + subString.charAt(0);
 				
 				StringBuilder builder = new StringBuilder(subString);
-				subString = builder.deleteCharAt(i).toString();
-				
+				//subString = builder.deleteCharAt(i).toString();
+				subString = builder.deleteCharAt(0).toString();
 				
 				if(subString.contains(inspectable)){
-					System.out.println("Row " + j);
 					return false;
 				}
 			//}
