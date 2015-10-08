@@ -3,3 +3,6 @@ UnitTestCaseAction 1444335940119 TestSudokuVerifier.java OK
 UnitTestSessionAction 1444335940129 TestSudokuVerifier OK
 RefactoringAction 1444336112854 SudokuVerifier.java ADD int ROW_LENGTH FIELD
 EditAction 1444336146279 SudokuVerifier.java 2686 3 11 0
+UnitTestCaseAction 1444336153257 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1444336153258 TestSudokuVerifier FAIL
+EditAction 1444336225174 SudokuVerifier.java 2690 3 12 0

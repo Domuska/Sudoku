@@ -94,7 +94,7 @@ public class SudokuVerifier {
 		//ALL COLUMNS, ONLY THE FIRST COLUMN
 		
 		
-		for(int j = 0; j < candidateString.length()/ROW_LENGTH; j++){
+		//for(int j = 0; j < candidateString.length()/ROW_LENGTH; j++){
 		
 			for(int i = 0; i < candidateString.length(); i +=9){
 				subString = subString + candidateString.charAt(i);
@@ -113,7 +113,7 @@ public class SudokuVerifier {
 					return false;
 				}
 			}
-		}
+		//}
 		
 		//METHOD INCOMPLETE
 		return true;
