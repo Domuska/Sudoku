@@ -94,6 +94,7 @@ public class SudokuVerifier {
 		//ALL COLUMNS, ONLY THE FIRST COLUMN
 		
 		System.out.println(candidateString.length()/ROW_LENGTH);
+		
 		for(int j = 0; j < candidateString.length()/ROW_LENGTH; j++){
 		
 			for(int i = 0; i < candidateString.length(); i +=9){
