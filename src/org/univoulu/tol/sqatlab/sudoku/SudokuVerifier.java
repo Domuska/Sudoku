@@ -51,7 +51,7 @@ public class SudokuVerifier {
 		}
 		
 		//see if column contains same numbers
-		if(!testColumn()){
+		if(!testColumns()){
 			return -4;
 		}
 		
@@ -86,7 +86,7 @@ public class SudokuVerifier {
 		return true;
 	}
 	
-	private boolean testColumn(){
+	private boolean testColumns(){
 		
 		String subString = "";
 		

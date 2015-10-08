@@ -24,3 +24,7 @@ CompilationAction 1444336861935 SudokuVerifier.java
 UnitTestCaseAction 1444336864966 TestSudokuVerifier.java OK
 UnitTestSessionAction 1444336864967 TestSudokuVerifier OK
 EditAction 1444336876768 SudokuVerifier.java 2906 3 12 0
+UnitTestCaseAction 1444336878972 TestSudokuVerifier.java OK
+UnitTestSessionAction 1444336878977 TestSudokuVerifier OK
+RefactoringAction 1444336897270 SudokuVerifier.java RENAME testColumn()=>boolean testColumns() METHOD
+EditAction 1444336897272 SudokuVerifier.java 2908 3 12 0
