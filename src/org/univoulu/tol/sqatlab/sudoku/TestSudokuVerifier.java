@@ -86,17 +86,7 @@ public class TestSudokuVerifier {
 		assertEquals(-4, verifier.verify(testString));
 	}
 	
-	@Test
-	public void testVerifyMethodIncorrectFirstColumn(){
-		
-		SudokuVerifier verifier = setupVerifier();
-		
-		String testString = 
-				"417369825432158947958724316825437169791586432346912758289643571573291684164875293";
-		
-		assertEquals (-4, verifier.verify(testString));
-				
-	}
+	
 	
 	private SudokuVerifier setupVerifier(){
 		
