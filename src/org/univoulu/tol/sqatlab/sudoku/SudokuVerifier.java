@@ -68,7 +68,7 @@ public class SudokuVerifier {
 	private boolean testSubGrid() {
 		
 		
-		return true;
+		return false;
 	}
 
 	private boolean testRows(){
