@@ -45,6 +45,11 @@ public class SudokuVerifier {
 			return -1;
 		}
 		
+		//see if sub-grid contains one number only once
+		if(!testSubGrid()){
+			return -2;
+		}
+		
 		//see if rows contain same numbers
 		if(!testRows()){
 			return -3;
@@ -60,6 +65,12 @@ public class SudokuVerifier {
 		return 0;
 	}
 	
+	private boolean testSubGrid() {
+		
+		
+		return true;
+	}
+
 	private boolean testRows(){
 		
 		for(int j = 0; j < candidateString.length(); j+=9){

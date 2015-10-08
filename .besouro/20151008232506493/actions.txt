@@ -56,3 +56,7 @@ RefactoringAction 1444337284244 TestSudokuVerifier.java RENAME testSubGrid=>void
 RefactoringAction 1444337286290 TestSudokuVerifier.java RENAME testVerifyMethod=>void testVerifyMethodSubGrid FIELD
 RefactoringAction 1444337315814 TestSudokuVerifier.java RENAME testVerifyMethodSubGrid=>void testVerifyMethodSubGrid() METHOD
 EditAction 1444337771719 TestSudokuVerifier.java 2533 10 23 9
+UnitTestCaseAction 1444337774289 TestSudokuVerifier.java FAIL
+UnitTestSessionAction 1444337774290 TestSudokuVerifier FAIL
+RefactoringAction 1444337836860 SudokuVerifier.java ADD boolean testSubGrid() METHOD
+EditAction 1444337853401 SudokuVerifier.java 2780 4 14 0
